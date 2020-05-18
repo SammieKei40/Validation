@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  
+<title>Validation Test</title>
+<style>
+h1 {color: black;
+  font-family: Time New Roman;
+  font-size: 300%; 
+  text-align: center;
+ text-decoration-style: double;
+text-decoration: underline;}
+
+html, body { margin: 0;
+  
+    padding: 0;
+  
+    font-size: 16px;}
+  
+  
+  
+  body {background-color: #D2B48C;
+  
+    font-family: 'Comic Neue', cursive;
+  
+    font-size: 1.2rem;}
+
+
+/* make the form two columns in desktop */
+  
+  @media (min-width: 992px) {
+  
+    main {
+  
+      max-width: 900px;
+  
+      border-radius: 25px;
+  
+      padding: 10px 50px;
+  
+    }
+
+</style>
+</head>
+<body style ="text-align=center;">
+<h1>Validation Form</h1>
+<main>
+<form action="ValidationTest" method="post" runat="server">
+<table>
+<tr> 
+<td align="right">Full Name:</td>
+<td><input type="text" id="fname" name="fname">*</td>
+</tr>
+<tr>
+<td align="right">Job Title:</td>
+<td><input type="text" id="txtJobTitle" runat="server" /></td
+</tr>
+<tr>
+<td align="right">Company:</td>
+<td><input type="text" id="txtCompany" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">Address Line 1:</td>
+<td><input type="text" id="txtAddressLine1" runat="server"
+/>*</td>
+</tr>
+<tr>
+<td align="right">Address Line 2:</td>
+<td><input type="text" id="txtAddressLine2" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">City:</td>
+<td><input type="text" id="txtCity" runat="server" />*</td>
+</tr>
+<tr>
+<td align="right">State/Province:</td>
+<td><input type="text" id="txtStateProvince" runat="server"
+/>*</td>
+</tr>
+<tr>
+<td align="right">ZIP/Postal Code:</td>
+<td><input type="text" id="txtPostalCode" runat="server" />*</td>
+</tr>
+<tr>
+<td align="right">Country:</td>
+<td><input type="text" id="txtCountry" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">Business Phone:</td>
+<td><input type="text" id="txtBusinessPhone" runat="server"
+/></td>
+</tr>
+<tr>
+<td align="right">Home Phone:</td>
+<td><input type="text" id="txtHomePhone" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">Business Fax:</td>
+<td><input type="text" id="txtBusinessFax" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">Email Address:</td>
+<td><input type="text" id="txtEmailAddress" runat="server" /></td>
+</tr>
+<tr>
+<td align="right">Birthday:</td>
+<td><input type="date" id="birthday" name="birthday"></td>
+</tr>
+<tr>
+<td colspan="2">
+* <i>Items marked with an asterisk are required.</i>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit" id="btnSubmit" text="Submit" runat="server"/>
+</td>
+</tr>
+</table>
+</form>
+</main>
+
+</body>
+</html>
